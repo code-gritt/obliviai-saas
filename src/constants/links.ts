@@ -1,85 +1,69 @@
-import { ClockIcon, MessageSquare, BarChart2, FileTextIcon, UserPlusIcon, CreditCardIcon, SettingsIcon, LogOut, Headphones, ChartPieIcon, LucideIcon, MessagesSquareIcon, NewspaperIcon, MegaphoneIcon, LineChartIcon, MessageSquareTextIcon, UsersIcon } from 'lucide-react';
+import {
+  ChartPieIcon,
+  MegaphoneIcon,
+  LineChartIcon,
+  MessageSquareTextIcon,
+  UsersIcon,
+  CreditCardIcon,
+  SettingsIcon,
+} from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
-type Link = {
-    href: string;
-    label: string;
-    icon: LucideIcon;
-}
-
-export const SIDEBAR_LINKS: Link[] = [
-    {
-        href: "/dashboard",
-        label: "Dashboard",
-        icon: ChartPieIcon,
-    },
-    {
-        href: "/dashboard/campaigns",
-        label: "Campaigns",
-        icon: MegaphoneIcon
-    },
-    {
-        href: "/dashboard/analytics",
-        label: "Analytics",
-        icon: LineChartIcon
-    },
-    {
-        href: "/dashboard/posts",
-        label: "Posts",
-        icon: MessageSquareTextIcon
-    },
-    {
-        href: "/dashboard/engagement",
-        label: "Engagement",
-        icon: UsersIcon
-    },
-    {
-        href: "/dashboard/billing",
-        label: "Billing",
-        icon: CreditCardIcon
-    },
-    {
-        href: "/dashboard/settings",
-        label: "Settings",
-        icon: SettingsIcon
-    },
-];
+export type Link = {
+  href: string;
+  label: string;
+  icon: LucideIcon;
+};
 
 export const FOOTER_LINKS = [
-    {
-        title: "Product",
-        links: [
-            { name: "Home", href: "/" },
-            { name: "Features", href: "/" },
-            { name: "Pricing", href: "/" },
-            { name: "Contact", href: "/" },
-            { name: "Download", href: "/" },
-        ],
-    },
-    {
-        title: "Resources",
-        links: [
-            { name: "Blog", href: "/blog" },
-            { name: "Help Center", href: "/help-center" },
-            { name: "Community", href: "/community" },
-            { name: "Guides", href: "/guides" },
-        ],
-    },
-    {
-        title: "Legal",
-        links: [
-            { name: "Privacy", href: "/privacy" },
-            { name: "Terms", href: "/terms" },
-            { name: "Cookies", href: "/cookies" },
-        ],
-    },
-    {
-        title: "Developers",
-        links: [
-            { name: "API Docs", href: "/api-docs" },
-            { name: "SDKs", href: "/sdks" },
-            { name: "Tools", href: "/tools" },
-            { name: "Open Source", href: "/open-source" },
-            { name: "Changelog", href: "/changelog" },
-        ],
-    },
+  {
+    title: "Company",
+    links: [
+      { name: "About", href: "https://portfolio-devsite.netlify.app/" },
+      {
+        name: "LinkedIn",
+        href: "https://www.linkedin.com/in/gokul-va-14a304a5/",
+      },
+      { name: "Blog", href: "https://devverse-astro.vercel.app/" },
+    ],
+  },
+  {
+    title: "AI Products",
+    links: [
+      { name: "Nuvonote", href: "https://nuvonote.vercel.app" },
+      { name: "Workafloat AI", href: "https://workafloat-ai.vercel.app" },
+      { name: "ContenGen AI", href: "https://contengen-ai.vercel.app/" },
+      { name: "TerraNovoa AI", href: "https://terranovoa-ai.vercel.app/" },
+      { name: "VisualAIze", href: "https://visualaize-vert.vercel.app/" },
+      { name: "LernKarte AI", href: "https://lernkarte-ai.vercel.app/" },
+      { name: "Geldify AI", href: "https://geldify-ai.vercel.app/" },
+      { name: "PruneUrl", href: "https://prune-url.vercel.app/" },
+    ],
+  },
+  {
+    title: "Resources",
+    links: [
+      { name: "Help Center", href: "/help-center" },
+      { name: "Community", href: "/community" },
+      { name: "Guides", href: "/guides" },
+    ],
+  },
+  {
+    title: "Legal",
+    links: [
+      { name: "Privacy", href: "/privacy" },
+      { name: "Terms", href: "/terms" },
+      { name: "Cookies", href: "/cookies" },
+    ],
+  },
+];
+
+export const SIDEBAR_LINKS: Link[] = [
+  { href: "/dashboard", label: "Dashboard", icon: ChartPieIcon },
+  { href: "/dashboard/campaigns", label: "Campaigns", icon: MegaphoneIcon },
+  { href: "/dashboard/analytics", label: "Analytics", icon: LineChartIcon },
+  { href: "/dashboard/posts", label: "Posts", icon: MessageSquareTextIcon },
+  { href: "/dashboard/engagement", label: "Engagement", icon: UsersIcon },
+  { href: "/dashboard/billing", label: "Billing", icon: CreditCardIcon },
+  { href: "/dashboard/settings", label: "Settings", icon: SettingsIcon },
 ];

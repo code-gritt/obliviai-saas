@@ -109,80 +109,82 @@ const Projects = () => {
         />
       </div>
 
-      <div className="flex flex-wrap justify-center items-start gap-8 mt-20 px-4 w-full max-w-7xl">
-        {/* Contact/Feedback Form */}
-        <div className="shadow-input mx-auto w-full max-w-md mt-20 p-4 md:rounded-2xl md:p-8 bg-white dark:bg-black relative z-[30]">
-          <h2 className="text-xl font-bold text-neutral-800 dark:text-neutral-200">
-            Request a Demo or Share Feedback
-          </h2>
-          <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-300">
-            Fill out the form below to request a demo or provide feedback. We
-            will respond as soon as we can.
-          </p>
+      {/* Contact/Feedback Form */}
+      <div className="mx-auto w-full max-w-md mt-20 p-6 md:rounded-2xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 shadow-lg relative z-[30]">
+        <h2 className="text-xl font-bold text-neutral-900 dark:text-white">
+          Request a Demo or Share Feedback
+        </h2>
+        <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+          Fill out the form below to request a demo or provide feedback. We’ll
+          respond as soon as we can.
+        </p>
 
-          <form onSubmit={handleSubmit} className="mt-8">
-            <FormGroup label="Name" id="name">
-              <Input
-                id="name"
-                name="name"
-                type="text"
-                placeholder="Your name"
-                value={formData.name}
-                onChange={handleInputChange}
-                required
-                disabled={isSubmitting}
-              />
-            </FormGroup>
-
-            <FormGroup label="Email Address" id="email">
-              <Input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="you@example.com"
-                value={formData.email}
-                onChange={handleInputChange}
-                required
-                disabled={isSubmitting}
-              />
-            </FormGroup>
-
-            <FormGroup label="Contact Number (Optional)" id="contact">
-              <Input
-                id="contact"
-                name="contact"
-                type="tel"
-                placeholder="Your contact number"
-                value={formData.contact}
-                onChange={handleInputChange}
-                disabled={isSubmitting}
-              />
-            </FormGroup>
-
-            <FormGroup label="Your Message" id="feedback">
-              <Textarea
-                id="feedback"
-                name="feedback"
-                placeholder="Let us know your feedback"
-                value={formData.feedback}
-                onChange={handleInputChange}
-                required
-                disabled={isSubmitting}
-                className="min-h-[100px]"
-              />
-            </FormGroup>
-
-            <button
-              type="submit"
+        <form onSubmit={handleSubmit} className="mt-8 space-y-4">
+          <FormGroup label="Name" id="name">
+            <Input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Your name"
+              value={formData.name}
+              onChange={handleInputChange}
+              required
               disabled={isSubmitting}
-              className="group/btn relative mt-4 block h-10 w-full rounded-md bg-gradient-to-br from-black to-neutral-600 font-medium text-white shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:bg-zinc-800 dark:from-zinc-900 dark:to-zinc-900 dark:shadow-[0px_1px_0px_0px_#27272a_inset,0px_-1px_0px_0px_#27272a_inset]"
-            >
-              {isSubmitting ? "Sending..." : "Submit"}
-              <BottomGradient />
-            </button>
-          </form>
-        </div>
+              className="bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500"
+            />
+          </FormGroup>
+
+          <FormGroup label="Email Address" id="email">
+            <Input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              value={formData.email}
+              onChange={handleInputChange}
+              required
+              disabled={isSubmitting}
+              className="bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500"
+            />
+          </FormGroup>
+
+          <FormGroup label="Contact Number (Optional)" id="contact">
+            <Input
+              id="contact"
+              name="contact"
+              type="tel"
+              placeholder="Your contact number"
+              value={formData.contact}
+              onChange={handleInputChange}
+              disabled={isSubmitting}
+              className="bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500"
+            />
+          </FormGroup>
+
+          <FormGroup label="Your Message" id="feedback">
+            <Textarea
+              id="feedback"
+              name="feedback"
+              placeholder="Let us know your feedback"
+              value={formData.feedback}
+              onChange={handleInputChange}
+              required
+              disabled={isSubmitting}
+              className="min-h-[100px] bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500"
+            />
+          </FormGroup>
+
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className="group relative mt-4 block h-10 w-full rounded-md bg-gradient-to-br from-violet-600 to-indigo-600 font-medium text-white hover:from-violet-500 hover:to-indigo-500 transition-all duration-300 disabled:opacity-50"
+          >
+            {isSubmitting ? "Sending..." : "Submit"}
+            <BottomGradient />
+          </button>
+        </form>
       </div>
+
       <Toaster position="top-right" richColors />
     </div>
   );
