@@ -74,6 +74,12 @@ export const projectsData = [
       "URL shortener with AI-powered safety checks, real-time analytics, and QR generation",
     href: "https://prune-url.vercel.app/",
   },
+  {
+    title: "Resumesque AI",
+    subtitle:
+      "A polished, AI professional resume for free — then share it instantly with a unique link",
+    href: "https://resumesque-ai.vercel.app/",
+  },
 ];
 
 const Menu = () => {

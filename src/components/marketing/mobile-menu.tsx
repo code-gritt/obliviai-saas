@@ -172,6 +172,14 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                     PruneUrl
                   </Link>
                 </li>
+                <li className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80">
+                  <Link
+                    href="https://resumesque-ai.vercel.app/"
+                    className="flex items-center w-full text-start"
+                  >
+                    Resumesque AI
+                  </Link>
+                </li>
               </AccordionContent>
             </AccordionItem>
           </Accordion>
