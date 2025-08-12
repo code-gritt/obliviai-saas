@@ -38,6 +38,7 @@ export const FOOTER_LINKS = [
       { name: "LernKarte AI", href: "https://lernkarte-ai.vercel.app/" },
       { name: "Geldify AI", href: "https://geldify-ai.vercel.app/" },
       { name: "PruneUrl", href: "https://prune-url.vercel.app/" },
+      { name: "Resumesque AI", href: "https://resumesque-ai.vercel.app/" },
     ],
   },
   {

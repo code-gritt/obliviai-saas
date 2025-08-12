@@ -106,80 +106,57 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
               </AccordionTrigger>
               <AccordionContent
                 onClick={() => setIsOpen(false)}
-                className="flex flex-col items-start gap-1 mt-1"
+                className="mt-1"
               >
-                <li className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80">
-                  <Link
-                    href="https://nuvonote.vercel.app"
-                    className="flex items-center w-full text-start"
-                  >
-                    Nuvonote
-                  </Link>
-                </li>
-                <li className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80">
-                  <Link
-                    href="https://workafloat-ai.vercel.app"
-                    className="flex items-center w-full text-start"
-                  >
-                    Workafloat AI
-                  </Link>
-                </li>
-                <li className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80">
-                  <Link
-                    href="https://contengen-ai.vercel.app/"
-                    className="flex items-center w-full text-start"
-                  >
-                    ContenGen AI
-                  </Link>
-                </li>
-                <li className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80">
-                  <Link
-                    href="https://terranovoa-ai.vercel.app/"
-                    className="flex items-center w-full text-start"
-                  >
-                    TerraNovoa AI
-                  </Link>
-                </li>
-                <li className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80">
-                  <Link
-                    href="https://visualaize-vert.vercel.app/"
-                    className="flex items-center w-full text-start"
-                  >
-                    VisualAIze
-                  </Link>
-                </li>
-                <li className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80">
-                  <Link
-                    href="https://lernkarte-ai.vercel.app/"
-                    className="flex items-center w-full text-start"
-                  >
-                    LernKarte AI
-                  </Link>
-                </li>
-                <li className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80">
-                  <Link
-                    href="https://geldify-ai.vercel.app/"
-                    className="flex items-center w-full text-start"
-                  >
-                    Geldify AI
-                  </Link>
-                </li>
-                <li className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80">
-                  <Link
-                    href="https://prune-url.vercel.app/"
-                    className="flex items-center w-full text-start"
-                  >
-                    PruneUrl
-                  </Link>
-                </li>
-                <li className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80">
-                  <Link
-                    href="https://resumesque-ai.vercel.app/"
-                    className="flex items-center w-full text-start"
-                  >
-                    Resumesque AI
-                  </Link>
-                </li>
+                <ul className="flex gap-3 overflow-x-auto whitespace-nowrap scrollbar-thin scrollbar-thumb-accent/60 scrollbar-track-transparent px-4 py-2">
+                  {[
+                    { title: "Nuvonote", href: "https://nuvonote.vercel.app" },
+                    {
+                      title: "Workafloat AI",
+                      href: "https://workafloat-ai.vercel.app",
+                    },
+                    {
+                      title: "ContenGen AI",
+                      href: "https://contengen-ai.vercel.app/",
+                    },
+                    {
+                      title: "TerraNovoa AI",
+                      href: "https://terranovoa-ai.vercel.app/",
+                    },
+                    {
+                      title: "VisualAIze",
+                      href: "https://visualaize-vert.vercel.app/",
+                    },
+                    {
+                      title: "LernKarte AI",
+                      href: "https://lernkarte-ai.vercel.app/",
+                    },
+                    {
+                      title: "Geldify AI",
+                      href: "https://geldify-ai.vercel.app/",
+                    },
+                    {
+                      title: "PruneUrl",
+                      href: "https://prune-url.vercel.app/",
+                    },
+                    {
+                      title: "Resumesque AI",
+                      href: "https://resumesque-ai.vercel.app/",
+                    },
+                  ].map((proj, idx) => (
+                    <li
+                      key={idx}
+                      className="flex-shrink-0 px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80 min-w-[200px]"
+                    >
+                      <Link
+                        href={proj.href}
+                        className="flex items-center w-full text-start"
+                      >
+                        {proj.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
               </AccordionContent>
             </AccordionItem>
           </Accordion>

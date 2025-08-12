@@ -3,6 +3,7 @@ import Link from "next/link";
 import { BlurText } from "../ui/blur-text";
 import { Button } from "../ui/button";
 import Container from "../global/container";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -27,7 +28,7 @@ const Hero = () => {
       {/* Headline */}
       <BlurText
         word={"ObliviAI"}
-        className="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl bg-gradient-to-br from-foreground to-foreground/60 bg-clip-text text-transparent py-2 lg:!leading-snug font-medium mt-6 font-heading"
+        className="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl bg-gradient-to-br from-foreground to-foreground/60 bg-clip-text text-transparent py-2 lg:!leading-snug font-medium mt-6 font-heading"
       />
       <BlurText
         word={"The complete AI toolkit for work, learning & creativity"}
@@ -72,19 +73,13 @@ const Hero = () => {
       <Container delay={0.3}>
         <div className="relative mx-auto max-w-7xl rounded-xl lg:rounded-[32px] border border-neutral-200/50 p-2 backdrop-blur-lg border-neutral-700 bg-neutral-800/50 md:p-4 mt-12">
           <div className="absolute top-1/4 left-1/2 -z-10 gradient w-3/4 -translate-x-1/2 h-1/4 -translate-y-1/2 blur-[10rem]"></div>
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full h-auto object-cover"
+          <Image
+            src="/luro.jpg"
+            alt="dashboard"
             width={1920}
             height={1080}
-          >
-            <source src="/saas.mp4" type="video/mp4" />
-            <source src="/saas.webm" type="video/webm" />
-            Your browser does not support the video tag.
-          </video>
+            className="rounded-lg lg:rounded-[20px]"
+          />
         </div>
       </Container>
     </div>
