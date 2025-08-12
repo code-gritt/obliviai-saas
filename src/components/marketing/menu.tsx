@@ -8,14 +8,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import {
-  CalendarRangeIcon,
-  CircleHelp,
-  CpuIcon,
-  HashIcon,
-  Newspaper,
-  UsersIcon,
-} from "lucide-react";
+import { CpuIcon, Newspaper } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import Icons from "../global/icons";
@@ -26,7 +19,8 @@ interface Props {
   children: React.ReactNode;
   icon: React.ReactNode;
 }
-// src/data/projectsData.ts
+
+// Data
 export const projectsData = [
   {
     title: "Nuvonote",
@@ -40,45 +34,56 @@ export const projectsData = [
   },
   {
     title: "ContenGen AI",
-    subtitle:
-      "Helps businesses generate powerful social media content for growth, engagement",
+    subtitle: "Helps businesses generate powerful social media content",
     href: "https://contengen-ai.vercel.app/",
   },
   {
     title: "TerraNovoa AI",
-    subtitle:
-      "Explore AI-powered geospatial mapping and insights for a sustainable future",
+    subtitle: "Explore AI-powered geospatial mapping",
     href: "https://terranovoa-ai.vercel.app/",
   },
   {
     title: "VisualAIze",
-    subtitle:
-      "Professional image editing powered by AI. Crop, resize, adjust colors, remove backgrounds",
+    subtitle: "Professional image editing powered by AI",
     href: "https://visualaize-vert.vercel.app/",
   },
   {
     title: "LernKarte AI",
-    subtitle:
-      "Generate intelligent flashcards instantly using AI. Learn faster and smarter with LernKarte AI",
+    subtitle: "Generate intelligent flashcards instantly",
     href: "https://lernkarte-ai.vercel.app/",
   },
   {
     title: "Geldify AI",
-    subtitle:
-      "Control your finances with real-time insights, automated tracking",
+    subtitle: "Control your finances with real-time insights",
     href: "https://geldify-ai.vercel.app/",
   },
   {
     title: "PruneUrl",
-    subtitle:
-      "URL shortener with AI-powered safety checks, real-time analytics, and QR generation",
+    subtitle: "URL shortener with AI-powered safety checks",
     href: "https://prune-url.vercel.app/",
   },
   {
     title: "Resumesque AI",
-    subtitle:
-      "A polished, AI professional resume for free — then share it instantly with a unique link",
+    subtitle: "A polished, AI professional resume for free",
     href: "https://resumesque-ai.vercel.app/",
+  },
+];
+
+export const blogsData = [
+  {
+    title: "Devverse",
+    subtitle: "Insights and tips on development",
+    href: "https://devverse-astro.vercel.app/",
+  },
+  {
+    title: "The Atlas Boulevard",
+    subtitle: "Exploring ideas, creativity, and design",
+    href: "https://the-atlas-boulevard.vercel.app/",
+  },
+  {
+    title: "Ich Spreche Deutsch",
+    subtitle: "Enrich your German knowledge and capabilities",
+    href: "https://ich-spreche-deutsch.vercel.app/",
   },
 ];
 
@@ -86,13 +91,14 @@ const Menu = () => {
   return (
     <NavigationMenu>
       <NavigationMenuList>
+        {/* Static Links */}
         <NavigationMenuItem>
           <Link
             href="https://portfolio-devsite.netlify.app/"
             legacyBehavior
             passHref
           >
-            <NavigationMenuLink className="h-10 px-4 py-2 text-sm font-normal rounded-md text-muted-foreground hover:text-foreground w-max hover:bg-none">
+            <NavigationMenuLink className="h-10 px-4 py-2 text-sm font-normal rounded-md text-muted-foreground hover:text-foreground">
               About
             </NavigationMenuLink>
           </Link>
@@ -101,65 +107,44 @@ const Menu = () => {
             legacyBehavior
             passHref
           >
-            <NavigationMenuLink className="h-10 px-4 py-2 text-sm font-normal rounded-md text-muted-foreground hover:text-foreground w-max hover:bg-none">
+            <NavigationMenuLink className="h-10 px-4 py-2 text-sm font-normal rounded-md text-muted-foreground hover:text-foreground">
               LinkedIn
             </NavigationMenuLink>
           </Link>
+        </NavigationMenuItem>
+
+        {/* Blogs */}
+        <NavigationMenuItem>
+          <NavigationMenuTrigger className="text-muted-foreground hover:text-foreground">
+            Blogs
+          </NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid w-[300px] gap-3 p-4">
+              {blogsData.map((blog, idx) => (
+                <Item
+                  key={idx}
+                  title={blog.title}
+                  href={blog.href}
+                  icon={<Newspaper className="w-5 h-5" />}
+                >
+                  {blog.subtitle}
+                </Item>
+              ))}
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
           <Link
-            href="https://devverse-astro.vercel.app/"
+            href="https://www.youtube.com/@DevvResolve"
             legacyBehavior
             passHref
           >
-            <NavigationMenuLink className="h-10 px-4 py-2 text-sm font-normal rounded-md text-muted-foreground hover:text-foreground w-max hover:bg-none">
-              Blog
+            <NavigationMenuLink className="h-10 px-4 py-2 text-sm font-normal rounded-md text-muted-foreground hover:text-foreground">
+              YouTube
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-        {/* <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-muted-foreground hover:text-foreground">
-            Features
-          </NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid rounded-3xl gap-3 p-4 md:w-[400px] lg:w-[500px] xl:w-[550px] lg:grid-cols-[.75fr_1fr]">
-              <li className="row-span-3">
-                <NavigationMenuLink asChild>
-                  <Link
-                    href="/"
-                    className="flex flex-col justify-end w-full h-full p-4 no-underline rounded-lg outline-none select-none bg-gradient-to-tr from-accent to-accent/50 focus:shadow-md"
-                  >
-                    <Icons.icon className="w-6 h-6" />
-                    <div className="my-2 text-lg font-normal">Luro AI</div>
-                    <p className="text-sm text-muted-foreground">
-                      Your ultimate social media management tool
-                    </p>
-                  </Link>
-                </NavigationMenuLink>
-              </li>
-              <Item
-                title="Content Calendar"
-                href="/features/content-calendar"
-                icon={<CalendarRangeIcon className="w-5 h-5" />}
-              >
-                Plan and visualize your content strategy.
-              </Item>
-              <Item
-                title="Hashtag Manager"
-                href="/features/hashtag-manager"
-                icon={<HashIcon className="w-5 h-5" />}
-              >
-                Research and track trending hashtags.
-              </Item>
-              <Item
-                title="Competitor Analysis"
-                href="/features/competitor-analysis"
-                icon={<UsersIcon className="w-5 h-5" />}
-              >
-                Monitor and analyze competitor performance.
-              </Item>
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem> */}
-
+        {/* AI Products */}
         <NavigationMenuItem>
           <NavigationMenuTrigger className="text-muted-foreground hover:text-foreground">
             AI Products
@@ -192,13 +177,13 @@ const Item = ({ title, href, children, icon, ...props }: Props) => {
           passHref
           href={href}
           {...props}
-          className="grid grid-cols-[.15fr_1fr] select-none space-y-1 rounded-lg p-3 leading-none no-underline outline-none transition-colors hover:bg-accent/50 hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground group"
+          className="grid grid-cols-[.15fr_1fr] select-none space-y-1 rounded-lg p-3 leading-none no-underline transition-colors hover:bg-accent/50 group"
         >
-          <div className="flex items-center mt-1 justify-center p-1 w-8 h-8 rounded-md border border-border/80">
+          <div className="flex items-center mt-1 justify-center p-1 w-8 h-8 rounded-md border">
             {icon}
           </div>
           <div className="text-start ml-3">
-            <span className="text-sm group-hover:text-foreground font-normal leading-none">
+            <span className="text-sm group-hover:text-foreground font-normal">
               {title}
             </span>
             <p className="text-sm mt-0.5 line-clamp-2 text-muted-foreground">

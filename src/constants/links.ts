@@ -24,7 +24,10 @@ export const FOOTER_LINKS = [
         name: "LinkedIn",
         href: "https://www.linkedin.com/in/gokul-va-14a304a5/",
       },
-      { name: "Blog", href: "https://devverse-astro.vercel.app/" },
+      {
+        name: "YouTube",
+        href: "https://www.youtube.com/@DevvResolve",
+      },
     ],
   },
   {
@@ -42,11 +45,17 @@ export const FOOTER_LINKS = [
     ],
   },
   {
-    title: "Resources",
+    title: "Blogs",
     links: [
-      { name: "Help Center", href: "/help-center" },
-      { name: "Community", href: "/community" },
-      { name: "Guides", href: "/guides" },
+      { name: "Devverse", href: "https://devverse-astro.vercel.app/" },
+      {
+        name: "The Atlas Boulevard",
+        href: "https://the-atlas-boulevard.vercel.app/",
+      },
+      {
+        name: "Ich Spreche Deutsch",
+        href: "https://ich-spreche-deutsch.vercel.app/",
+      },
     ],
   },
   {
