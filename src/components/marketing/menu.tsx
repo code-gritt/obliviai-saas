@@ -70,7 +70,7 @@ export const projectsData = [
   {
     title: "Orqly AI",
     subtitle: "Connecting Voices, Bridging Worlds",
-    href: "https://orqly.vercel.app/",
+    href: "https://orqly-ai.vercel.app/",
   },
 ];
 
