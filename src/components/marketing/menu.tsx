@@ -67,6 +67,11 @@ export const projectsData = [
     subtitle: "A polished, AI professional resume for free",
     href: "https://resumesque-ai.vercel.app/",
   },
+  {
+    title: "Orqly AI",
+    subtitle: "Connecting Voices, Bridging Worlds",
+    href: "https://orqly.vercel.app/",
+  },
 ];
 
 export const blogsData = [
