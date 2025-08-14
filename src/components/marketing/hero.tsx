@@ -44,9 +44,11 @@ const Hero = () => {
           <strong> TerraNovoa AI</strong>’s geospatial mapping,
           <strong> VisualAIze</strong>’s image editing,
           <strong> LernKarte AI</strong>’s smart flashcards,
-          <strong> Geldify AI</strong>’s financial tracking, and
-          <strong> PruneUrl</strong>’s safe link shortening — ObliviAI is your
-          launchpad for faster work, better learning, and smarter decisions.
+          <strong> Geldify AI</strong>’s financial tracking,
+          <strong> PruneUrl</strong>’s safe link shortening, and
+          <strong> Orqly AI</strong>’s AI language translations, — ObliviAI is
+          your launchpad for faster work, better learning, and smarter
+          decisions.
         </p>
       </Container>
 
