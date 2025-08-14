@@ -49,6 +49,10 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
       title: "Ich Spreche Deutsch",
       href: "https://ich-spreche-deutsch.vercel.app/",
     },
+    {
+      title: "Je Parle Francais",
+      href: "https://je-parle-francais.vercel.app/",
+    },
   ];
 
   const linkBaseClasses =

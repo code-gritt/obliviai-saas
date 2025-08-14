@@ -90,6 +90,11 @@ export const blogsData = [
     subtitle: "Enrich your German knowledge and capabilities",
     href: "https://ich-spreche-deutsch.vercel.app/",
   },
+  {
+    title: "Je Parle Francais",
+    subtitle: "Enrich your French knowledge and capabilities",
+    href: "https://je-parle-francais.vercel.app/",
+  },
 ];
 
 const Menu = () => {
