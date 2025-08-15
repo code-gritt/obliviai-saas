@@ -135,7 +135,7 @@ const Menu = () => {
             Blogs
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[300px] gap-3 p-4">
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
               {blogsData.map((blog, idx) => (
                 <Item
                   key={idx}
@@ -166,7 +166,7 @@ const Menu = () => {
             AI Products
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
+            <ul className="grid w-[800px] gap-10 p-4 md:w-[1000px] md:grid-cols-4">
               {projectsData.map((proj, idx) => (
                 <Item
                   key={idx}
