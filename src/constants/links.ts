@@ -43,6 +43,10 @@ export const FOOTER_LINKS = [
       { name: "PruneUrl", href: "https://prune-url.vercel.app/" },
       { name: "Resumesque AI", href: "https://resumesque-ai.vercel.app/" },
       { name: "Orqly AI", href: "https://orqly-ai.vercel.app/" },
+      {
+        title: "Rocliq",
+        href: "https://rocliq.vercel.app/",
+      },
     ],
   },
   {

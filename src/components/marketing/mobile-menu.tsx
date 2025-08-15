@@ -37,6 +37,10 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
     { title: "PruneUrl", href: "https://prune-url.vercel.app/" },
     { title: "Resumesque AI", href: "https://resumesque-ai.vercel.app/" },
     { title: "Orqly AI", href: "https://orqly-ai.vercel.app/" },
+    {
+      title: "Rocliq",
+      href: "https://rocliq.vercel.app/",
+    },
   ];
 
   const blogsData = [

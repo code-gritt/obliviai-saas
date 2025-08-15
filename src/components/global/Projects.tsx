@@ -119,6 +119,12 @@ const Projects = () => {
           href="https://orqly-ai.vercel.app/"
           videoUrls={["/lang.mp4"]}
         />
+        <AnimatedPinDemo
+          title="Rocliq"
+          subtitle="Streamlines project and task management. Organize your work and hit your deadlines"
+          href="https://rocliq.vercel.app/"
+          videoUrls={["/werwer.mp4"]}
+        />
       </div>
 
       {/* Contact/Feedback Form */}

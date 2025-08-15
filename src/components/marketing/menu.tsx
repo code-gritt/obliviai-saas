@@ -72,6 +72,12 @@ export const projectsData = [
     subtitle: "Connecting Voices, Bridging Worlds",
     href: "https://orqly-ai.vercel.app/",
   },
+  {
+    title: "Rocliq",
+    subtitle:
+      "Streamlines project and task management. Organize your work and hit your deadlines",
+    href: "https://rocliq.vercel.app/",
+  },
 ];
 
 export const blogsData = [
