@@ -113,6 +113,12 @@ const Projects = () => {
           href="https://resumesque-ai.vercel.app/"
           videoUrls={["/res.mp4"]}
         />
+        <AnimatedPinDemo
+          title="Orqly AI"
+          subtitle="Connecting Voices, Bridging Worlds, Linking Minds, Shaping Futures"
+          href="https://orqly-ai.vercel.app/"
+          videoUrls={["/lang.mp4"]}
+        />
       </div>
 
       {/* Contact/Feedback Form */}
