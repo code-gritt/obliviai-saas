@@ -41,6 +41,10 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
       title: "Rocliq",
       href: "https://rocliq.vercel.app/",
     },
+    {
+      title: "DigiRech",
+      href: "digirech.vercel.app/",
+    },
   ];
 
   const blogsData = [

@@ -125,6 +125,12 @@ const Projects = () => {
           href="https://rocliq.vercel.app/"
           videoUrls={["/werwer.mp4"]}
         />
+        <AnimatedPinDemo
+          title="DigiRech"
+          subtitle="Send professional invoices, track payments in real time, and grow your business"
+          href="digirech.vercel.app/"
+          videoUrls={["/invoice.mp4"]}
+        />
       </div>
 
       {/* Contact/Feedback Form */}

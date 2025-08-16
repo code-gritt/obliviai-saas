@@ -78,6 +78,12 @@ export const projectsData = [
       "Streamlines project and task management. Organize your work and hit your deadlines",
     href: "https://rocliq.vercel.app/",
   },
+  {
+    title: "DigiRech",
+    subtitle:
+      "Send professional invoices, track payments in real time, and grow your business",
+    href: "digirech.vercel.app/",
+  },
 ];
 
 export const blogsData = [
