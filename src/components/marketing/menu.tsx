@@ -82,7 +82,7 @@ export const projectsData = [
     title: "DigiRech",
     subtitle:
       "Send professional invoices, track payments in real time, and grow your business",
-    href: "digirech.vercel.app/",
+    href: "https://digirech.vercel.app/",
   },
 ];
 

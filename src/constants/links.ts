@@ -49,7 +49,7 @@ export const FOOTER_LINKS = [
       },
       {
         title: "DigiRech",
-        href: "digirech.vercel.app/",
+        href: "https://digirech.vercel.app/",
       },
     ],
   },

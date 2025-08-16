@@ -43,7 +43,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
     },
     {
       title: "DigiRech",
-      href: "digirech.vercel.app/",
+      href: "https://digirech.vercel.app/",
     },
   ];
 
