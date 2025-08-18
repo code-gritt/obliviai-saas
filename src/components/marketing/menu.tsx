@@ -84,6 +84,12 @@ export const projectsData = [
       "Send professional invoices, track payments in real time, and grow your business",
     href: "https://digirech.vercel.app/",
   },
+  {
+    title: "Rosetta",
+    subtitle:
+      "A smarter way to manage bookmarks, code snippets, and notes all in one private hub",
+    href: "https://rosetta-bookmark.vercel.app/",
+  },
 ];
 
 export const blogsData = [

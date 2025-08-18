@@ -131,6 +131,12 @@ const Projects = () => {
           href="https://digirech.vercel.app/"
           videoUrls={["/invoice.mp4"]}
         />
+        <AnimatedPinDemo
+          title="Rosetta"
+          subtitle="A smarter way to manage bookmarks, code snippets, and notes all in one private hub"
+          href="https://rosetta-bookmark.vercel.app/"
+          videoUrls={["/book.mp4"]}
+        />
       </div>
 
       {/* Contact/Feedback Form */}
