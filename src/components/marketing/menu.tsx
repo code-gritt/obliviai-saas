@@ -35,7 +35,7 @@ export const projectsData = [
   {
     title: "ContenGen AI",
     subtitle: "Helps businesses generate powerful social media content",
-    href: "https://contengen-ai.vercel.app/",
+    href: "https://contengen.vercel.app/",
   },
   {
     title: "TerraNovoa AI",

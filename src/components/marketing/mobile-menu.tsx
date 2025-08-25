@@ -29,7 +29,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
   const projectsData = [
     { title: "Nuvonote", href: "https://nuvonote.vercel.app" },
     { title: "Workafloat AI", href: "https://workafloat-ai.vercel.app" },
-    { title: "ContenGen AI", href: "https://contengen-ai.vercel.app/" },
+    { title: "ContenGen AI", href: "https://contengen.vercel.app/" },
     { title: "TerraNovoa AI", href: "https://terranovoa-ai.vercel.app/" },
     { title: "VisualAIze", href: "https://visualaize-vert.vercel.app/" },
     { title: "LernKarte AI", href: "https://lernkarte-ai.vercel.app/" },

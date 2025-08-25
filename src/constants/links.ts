@@ -35,7 +35,7 @@ export const FOOTER_LINKS = [
     links: [
       { name: "Nuvonote", href: "https://nuvonote.vercel.app" },
       { name: "Workafloat AI", href: "https://workafloat-ai.vercel.app" },
-      { name: "ContenGen AI", href: "https://contengen-ai.vercel.app/" },
+      { name: "ContenGen AI", href: "https://contengen.vercel.app/" },
       { name: "TerraNovoa AI", href: "https://terranovoa-ai.vercel.app/" },
       { name: "VisualAIze", href: "https://visualaize-vert.vercel.app/" },
       { name: "LernKarte AI", href: "https://lernkarte-ai.vercel.app/" },

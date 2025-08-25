@@ -74,7 +74,7 @@ const Projects = () => {
         <AnimatedPinDemo
           title="ContenGen AI"
           subtitle="Helps businesses generate powerful social media content for growth, engagement"
-          href="https://contengen-ai.vercel.app/"
+          href="https://contengen.vercel.app/"
           videoUrls={["/saasmon.mp4"]}
         />
         <AnimatedPinDemo
