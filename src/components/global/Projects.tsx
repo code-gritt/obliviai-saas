@@ -137,6 +137,12 @@ const Projects = () => {
           href="https://rosetta-bookmark.vercel.app/"
           videoUrls={["/book.mp4"]}
         />
+        <AnimatedPinDemo
+          title="Grand Tourismo"
+          subtitle="AI-powered travel safety companion. Get real-time safety insights, health advisories, cultural guidance"
+          href="https://rosetta-bookmark.vercel.app/"
+          videoUrls={["/grand.mp4"]}
+        />
       </div>
 
       {/* Contact/Feedback Form */}

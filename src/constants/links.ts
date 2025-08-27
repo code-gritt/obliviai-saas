@@ -55,6 +55,10 @@ export const FOOTER_LINKS = [
         title: "Rosetta",
         href: "https://rosetta-bookmark.vercel.app/",
       },
+      {
+        title: "Grand Tourismo",
+        href: "https://grand-tourismo.vercel.app/",
+      },
     ],
   },
   {

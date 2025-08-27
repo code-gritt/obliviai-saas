@@ -49,6 +49,10 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
       title: "Rosetta",
       href: "https://rosetta-bookmark.vercel.app/",
     },
+    {
+      title: "Grand Tourismo",
+      href: "https://grand-tourismo.vercel.app/",
+    },
   ];
 
   const blogsData = [

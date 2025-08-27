@@ -90,6 +90,12 @@ export const projectsData = [
       "A smarter way to manage bookmarks, code snippets, and notes all in one private hub",
     href: "https://rosetta-bookmark.vercel.app/",
   },
+  {
+    title: "Grand Tourismo",
+    subtitle:
+      "AI-powered travel safety companion. Get real-time safety insights, health advisories, cultural guidance",
+    href: "https://grand-tourismo.vercel.app/",
+  },
 ];
 
 export const blogsData = [
