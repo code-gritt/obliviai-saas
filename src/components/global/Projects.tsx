@@ -140,7 +140,7 @@ const Projects = () => {
         <AnimatedPinDemo
           title="Grand Tourismo"
           subtitle="AI-powered travel safety companion. Get real-time safety insights, health advisories, cultural guidance"
-          href="https://rosetta-bookmark.vercel.app/"
+          href="https://grand-tourismo.vercel.app/"
           videoUrls={["/grand.mp4"]}
         />
       </div>
