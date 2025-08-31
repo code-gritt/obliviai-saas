@@ -59,6 +59,10 @@ export const FOOTER_LINKS = [
         title: "Grand Tourismo",
         href: "https://grand-tourismo.vercel.app/",
       },
+      {
+        title: "Cryogena",
+        href: "https://cryogena.vercel.app/",
+      },
     ],
   },
   {

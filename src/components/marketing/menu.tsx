@@ -96,6 +96,12 @@ export const projectsData = [
       "AI-powered travel safety companion. Get real-time safety insights, health advisories, cultural guidance",
     href: "https://grand-tourismo.vercel.app/",
   },
+  {
+    title: "Cryogena",
+    subtitle:
+      "A secure, intuitive platform to organize files, assign roles, and track activity—all in real-time",
+    href: "https://cryogena.vercel.app/",
+  },
 ];
 
 export const blogsData = [

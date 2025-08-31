@@ -143,6 +143,12 @@ const Projects = () => {
           href="https://grand-tourismo.vercel.app/"
           videoUrls={["/grand.mp4"]}
         />
+        <AnimatedPinDemo
+          title="Cryogena"
+          subtitle="A secure, intuitive platform to organize files, assign roles, and track activity—all in real-time"
+          href="https://cryogena.vercel.app/"
+          videoUrls={["/storage.mp4"]}
+        />
       </div>
 
       {/* Contact/Feedback Form */}
