@@ -149,6 +149,12 @@ const Projects = () => {
           href="https://cryogena.vercel.app/"
           videoUrls={["/storage.mp4"]}
         />
+        <AnimatedPinDemo
+          title="Explorafit"
+          subtitle="Plan smarter bike rides with Explorafit. Discover eco-friendly cycling routes, track your journeys"
+          href="https://explorafit.vercel.app/"
+          videoUrls={["/cycle.mp4"]}
+        />
       </div>
 
       {/* Contact/Feedback Form */}

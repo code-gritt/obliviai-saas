@@ -63,6 +63,10 @@ export const FOOTER_LINKS = [
         title: "Cryogena",
         href: "https://cryogena.vercel.app/",
       },
+      {
+        title: "Explorafit",
+        href: "https://explorafit.vercel.app/",
+      },
     ],
   },
   {

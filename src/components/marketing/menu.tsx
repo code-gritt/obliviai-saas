@@ -102,6 +102,12 @@ export const projectsData = [
       "A secure, intuitive platform to organize files, assign roles, and track activity—all in real-time",
     href: "https://cryogena.vercel.app/",
   },
+  {
+    title: "Explorafit",
+    subtitle:
+      "Plan smarter bike rides with Explorafit. Discover eco-friendly cycling routes, track your journeys",
+    href: "https://explorafit.vercel.app/",
+  },
 ];
 
 export const blogsData = [
