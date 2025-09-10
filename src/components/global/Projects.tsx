@@ -1,19 +1,19 @@
-"use client";
+'use client';
 
-import React, { useState } from "react";
-import { AnimatedPinDemo } from "./animated-pin-demo";
-import { Label } from "../ui/label";
-import { Input } from "../ui/input";
-import { Textarea } from "../ui/textarea";
-import { Toaster, toast } from "sonner";
-import emailjs from "@emailjs/browser";
+import React, { useState } from 'react';
+import { AnimatedPinDemo } from './animated-pin-demo';
+import { Label } from '../ui/label';
+import { Input } from '../ui/input';
+import { Textarea } from '../ui/textarea';
+import { Toaster, toast } from 'sonner';
+import emailjs from '@emailjs/browser';
 
 const Projects = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    contact: "",
-    feedback: "",
+    name: '',
+    email: '',
+    contact: '',
+    feedback: '',
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -29,23 +29,23 @@ const Projects = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const serviceID = "service_ycpmjtb";
-    const templateID = "template_enneme7";
-    const publicKey = "i3jrTDHjuHznTDQVn";
+    const serviceID = 'service_ycpmjtb';
+    const templateID = 'template_enneme7';
+    const publicKey = 'i3jrTDHjuHznTDQVn';
 
     const payload = {
       from_name: formData.name,
       from_email: formData.email,
-      contact: formData.contact || "Not provided",
+      contact: formData.contact || 'Not provided',
       feedback: formData.feedback,
     };
 
     try {
       await emailjs.send(serviceID, templateID, payload, publicKey);
-      toast.success("Thanks for your message! We’ll get back to you shortly.");
-      setFormData({ name: "", email: "", contact: "", feedback: "" });
+      toast.success('Thanks for your message! We’ll get back to you shortly.');
+      setFormData({ name: '', email: '', contact: '', feedback: '' });
     } catch (err) {
-      toast.error("Something went wrong. Please try again.");
+      toast.error('Something went wrong. Please try again.');
     } finally {
       setIsSubmitting(false);
     }
@@ -62,98 +62,104 @@ const Projects = () => {
           title="Nuvonote"
           subtitle="Minimalistic notepad powered by structured prompts"
           href="https://nuvonote.vercel.app"
-          videoUrls={["/notes.mp4"]}
+          videoUrls={['/notes.mp4']}
         />
 
         <AnimatedPinDemo
           title="Workafloat AI"
           subtitle="Use AI to uncover insights about job roles and search smarter"
           href="https://workafloat-ai.vercel.app"
-          videoUrls={["/work.mp4"]}
+          videoUrls={['/work.mp4']}
         />
         <AnimatedPinDemo
           title="ContenGen AI"
           subtitle="Helps businesses generate powerful social media content for growth, engagement"
           href="https://contengen.vercel.app/"
-          videoUrls={["/saasmon.mp4"]}
+          videoUrls={['/saasmon.mp4']}
         />
         <AnimatedPinDemo
           title="TerraNovoa AI"
           subtitle="Explore AI-powered geospatial mapping and insights for a sustainable future"
           href="https://terranovoa-ai.vercel.app/"
-          videoUrls={["/renew1.mp4"]}
+          videoUrls={['/renew1.mp4']}
         />
         <AnimatedPinDemo
           title="VisualAIze"
           subtitle="Professional image editing powered by AI. Crop, resize, adjust colors, remove backgrounds"
           href="https://visualaize-vert.vercel.app/"
-          videoUrls={["/ren1.mp4"]}
+          videoUrls={['/ren1.mp4']}
         />
         <AnimatedPinDemo
           title="LernKarte AI"
           subtitle="Generate intelligent flashcards instantly using AI. Learn faster and smarter with LernKarte AI"
           href="https://lernkarte-ai.vercel.app/"
-          videoUrls={["/renfield.mp4"]}
+          videoUrls={['/renfield.mp4']}
         />
         <AnimatedPinDemo
           title="Geldify AI"
           subtitle="Geldify AI control your finances with real-time insights, automated tracking"
           href="https://geldify-ai.vercel.app/"
-          videoUrls={["/ren.mp4"]}
+          videoUrls={['/ren.mp4']}
         />
         <AnimatedPinDemo
           title="PruneUrl"
           subtitle="URL shortener with AI-powered safety checks, real-time analytics, and QR generation"
           href="https://prune-url.vercel.app/"
-          videoUrls={["/videogen.mp4"]}
+          videoUrls={['/videogen.mp4']}
         />
         <AnimatedPinDemo
           title="Resumesque AI"
           subtitle="A polished, AI professional resume for free — then share it instantly with a unique link"
           href="https://resumesque-ai.vercel.app/"
-          videoUrls={["/res.mp4"]}
+          videoUrls={['/res.mp4']}
         />
         <AnimatedPinDemo
           title="Orqly AI"
           subtitle="Connecting Voices, Bridging Worlds, Linking Minds, Shaping Futures"
           href="https://orqly-ai.vercel.app/"
-          videoUrls={["/lang.mp4"]}
+          videoUrls={['/lang.mp4']}
         />
         <AnimatedPinDemo
           title="Rocliq"
           subtitle="Streamlines project and task management. Organize your work and hit your deadlines"
           href="https://rocliq.vercel.app/"
-          videoUrls={["/werwer.mp4"]}
+          videoUrls={['/werwer.mp4']}
         />
         <AnimatedPinDemo
           title="DigiRech"
           subtitle="Send professional invoices, track payments in real time, and grow your business"
           href="https://digirech.vercel.app/"
-          videoUrls={["/invoice.mp4"]}
+          videoUrls={['/invoice.mp4']}
         />
         <AnimatedPinDemo
           title="Rosetta"
           subtitle="A smarter way to manage bookmarks, code snippets, and notes all in one private hub"
           href="https://rosetta-bookmark.vercel.app/"
-          videoUrls={["/book.mp4"]}
+          videoUrls={['/book.mp4']}
         />
         <AnimatedPinDemo
           title="Grand Tourismo"
           subtitle="AI-powered travel safety companion. Get real-time safety insights, health advisories, cultural guidance"
           href="https://grand-tourismo.vercel.app/"
-          videoUrls={["/grand.mp4"]}
+          videoUrls={['/grand.mp4']}
         />
         <AnimatedPinDemo
           title="Cryogena"
           subtitle="A secure, intuitive platform to organize files, assign roles, and track activity—all in real-time"
           href="https://cryogena.vercel.app/"
-          videoUrls={["/storage.mp4"]}
+          videoUrls={['/storage.mp4']}
         />
         <AnimatedPinDemo
           title="Explorafit"
           subtitle="Plan smarter bike rides with Explorafit. Discover eco-friendly cycling routes, track your journeys"
           href="https://explorafit.vercel.app/"
-          videoUrls={["/cycle.mp4"]}
+          videoUrls={['/cycle.mp4']}
+        />
+        <AnimatedPinDemo
+          title="Klientel"
+          subtitle="Klientel helps you capture leads, track pipelines, and streamline client communication"
+          href="https://klientel.vercel.app/"
+          videoUrls={['/klientel.mp4']}
         />
       </div>
 
@@ -227,7 +233,7 @@ const Projects = () => {
             disabled={isSubmitting}
             className="group relative mt-4 block h-10 w-full rounded-md bg-gradient-to-br from-violet-600 to-indigo-600 font-medium text-white hover:from-violet-500 hover:to-indigo-500 transition-all duration-300 disabled:opacity-50"
           >
-            {isSubmitting ? "Sending..." : "Submit"}
+            {isSubmitting ? 'Sending...' : 'Submit'}
             <BottomGradient />
           </button>
         </form>

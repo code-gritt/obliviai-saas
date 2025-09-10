@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import {
   NavigationMenu,
@@ -7,11 +7,11 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
-import { CpuIcon, Newspaper } from "lucide-react";
-import Link from "next/link";
-import React from "react";
-import Icons from "../global/icons";
+} from '@/components/ui/navigation-menu';
+import { CpuIcon, Newspaper } from 'lucide-react';
+import Link from 'next/link';
+import React from 'react';
+import Icons from '../global/icons';
 
 interface Props {
   title: string;
@@ -23,113 +23,119 @@ interface Props {
 // Data
 export const projectsData = [
   {
-    title: "Nuvonote",
-    subtitle: "Minimalistic notepad powered by structured prompts",
-    href: "https://nuvonote.vercel.app",
+    title: 'Nuvonote',
+    subtitle: 'Minimalistic notepad powered by structured prompts',
+    href: 'https://nuvonote.vercel.app',
   },
   {
-    title: "Workafloat AI",
-    subtitle: "Use AI to uncover insights about job roles and search smarter",
-    href: "https://workafloat-ai.vercel.app",
+    title: 'Workafloat AI',
+    subtitle: 'Use AI to uncover insights about job roles and search smarter',
+    href: 'https://workafloat-ai.vercel.app',
   },
   {
-    title: "ContenGen AI",
-    subtitle: "Helps businesses generate powerful social media content",
-    href: "https://contengen.vercel.app/",
+    title: 'ContenGen AI',
+    subtitle: 'Helps businesses generate powerful social media content',
+    href: 'https://contengen.vercel.app/',
   },
   {
-    title: "TerraNovoa AI",
-    subtitle: "Explore AI-powered geospatial mapping",
-    href: "https://terranovoa-ai.vercel.app/",
+    title: 'TerraNovoa AI',
+    subtitle: 'Explore AI-powered geospatial mapping',
+    href: 'https://terranovoa-ai.vercel.app/',
   },
   {
-    title: "VisualAIze",
-    subtitle: "Professional image editing powered by AI",
-    href: "https://visualaize-vert.vercel.app/",
+    title: 'VisualAIze',
+    subtitle: 'Professional image editing powered by AI',
+    href: 'https://visualaize-vert.vercel.app/',
   },
   {
-    title: "LernKarte AI",
-    subtitle: "Generate intelligent flashcards instantly",
-    href: "https://lernkarte-ai.vercel.app/",
+    title: 'LernKarte AI',
+    subtitle: 'Generate intelligent flashcards instantly',
+    href: 'https://lernkarte-ai.vercel.app/',
   },
   {
-    title: "Geldify AI",
-    subtitle: "Control your finances with real-time insights",
-    href: "https://geldify-ai.vercel.app/",
+    title: 'Geldify AI',
+    subtitle: 'Control your finances with real-time insights',
+    href: 'https://geldify-ai.vercel.app/',
   },
   {
-    title: "PruneUrl",
-    subtitle: "URL shortener with AI-powered safety checks",
-    href: "https://prune-url.vercel.app/",
+    title: 'PruneUrl',
+    subtitle: 'URL shortener with AI-powered safety checks',
+    href: 'https://prune-url.vercel.app/',
   },
   {
-    title: "Resumesque AI",
-    subtitle: "A polished, AI professional resume for free",
-    href: "https://resumesque-ai.vercel.app/",
+    title: 'Resumesque AI',
+    subtitle: 'A polished, AI professional resume for free',
+    href: 'https://resumesque-ai.vercel.app/',
   },
   {
-    title: "Orqly AI",
-    subtitle: "Connecting Voices, Bridging Worlds",
-    href: "https://orqly-ai.vercel.app/",
+    title: 'Orqly AI',
+    subtitle: 'Connecting Voices, Bridging Worlds',
+    href: 'https://orqly-ai.vercel.app/',
   },
   {
-    title: "Rocliq",
+    title: 'Rocliq',
     subtitle:
-      "Streamlines project and task management. Organize your work and hit your deadlines",
-    href: "https://rocliq.vercel.app/",
+      'Streamlines project and task management. Organize your work and hit your deadlines',
+    href: 'https://rocliq.vercel.app/',
   },
   {
-    title: "DigiRech",
+    title: 'DigiRech',
     subtitle:
-      "Send professional invoices, track payments in real time, and grow your business",
-    href: "https://digirech.vercel.app/",
+      'Send professional invoices, track payments in real time, and grow your business',
+    href: 'https://digirech.vercel.app/',
   },
   {
-    title: "Rosetta",
+    title: 'Rosetta',
     subtitle:
-      "A smarter way to manage bookmarks, code snippets, and notes all in one private hub",
-    href: "https://rosetta-bookmark.vercel.app/",
+      'A smarter way to manage bookmarks, code snippets, and notes all in one private hub',
+    href: 'https://rosetta-bookmark.vercel.app/',
   },
   {
-    title: "Grand Tourismo",
+    title: 'Grand Tourismo',
     subtitle:
-      "AI-powered travel safety companion. Get real-time safety insights, health advisories, cultural guidance",
-    href: "https://grand-tourismo.vercel.app/",
+      'AI-powered travel safety companion. Get real-time safety insights, health advisories, cultural guidance',
+    href: 'https://grand-tourismo.vercel.app/',
   },
   {
-    title: "Cryogena",
+    title: 'Cryogena',
     subtitle:
-      "A secure, intuitive platform to organize files, assign roles, and track activity—all in real-time",
-    href: "https://cryogena.vercel.app/",
+      'A secure, intuitive platform to organize files, assign roles, and track activity—all in real-time',
+    href: 'https://cryogena.vercel.app/',
   },
   {
-    title: "Explorafit",
+    title: 'Explorafit',
     subtitle:
-      "Plan smarter bike rides with Explorafit. Discover eco-friendly cycling routes, track your journeys",
-    href: "https://explorafit.vercel.app/",
+      'Plan smarter bike rides with Explorafit. Discover eco-friendly cycling routes, track your journeys',
+    href: 'https://explorafit.vercel.app/',
+  },
+  {
+    title: 'Klientel',
+    subtitle:
+      'Klientel helps you capture leads, track pipelines, and streamline client communication',
+    href: 'https://klientel.vercel.app/',
   },
 ];
 
 export const blogsData = [
   {
-    title: "Devverse",
-    subtitle: "Insights and tips on development",
-    href: "https://devverse-astro.vercel.app/",
+    title: 'Devverse',
+    subtitle: 'Insights and tips on development',
+    href: 'https://devverse-astro.vercel.app/',
   },
   {
-    title: "The Atlas Boulevard",
-    subtitle: "Exploring ideas, creativity, and design",
-    href: "https://the-atlas-boulevard.vercel.app/",
+    title: 'The Atlas Boulevard',
+    subtitle: 'Exploring ideas, creativity, and design',
+    href: 'https://the-atlas-boulevard.vercel.app/',
   },
   {
-    title: "Ich Spreche Deutsch",
-    subtitle: "Enrich your German knowledge and capabilities",
-    href: "https://ich-spreche-deutsch.vercel.app/",
+    title: 'Ich Spreche Deutsch',
+    subtitle: 'Enrich your German knowledge and capabilities',
+    href: 'https://ich-spreche-deutsch.vercel.app/',
   },
   {
-    title: "Je Parle Francais",
-    subtitle: "Enrich your French knowledge and capabilities",
-    href: "https://je-parle-francais.vercel.app/",
+    title: 'Je Parle Francais',
+    subtitle: 'Enrich your French knowledge and capabilities',
+    href: 'https://je-parle-francais.vercel.app/',
   },
 ];
 
@@ -242,6 +248,6 @@ const Item = ({ title, href, children, icon, ...props }: Props) => {
   );
 };
 
-Item.displayName = "Item";
+Item.displayName = 'Item';
 
 export default Menu;
