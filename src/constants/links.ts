@@ -75,6 +75,10 @@ export const FOOTER_LINKS = [
         title: "Stellar",
         href: "https://stellar-ai-gold.vercel.app/",
       },
+      {
+        title: "OptimAIzer",
+        href: "https://optimaizer.vercel.app/",
+      },
     ],
   },
   {

@@ -167,6 +167,12 @@ const Projects = () => {
           href="https://stellar-ai-gold.vercel.app/"
           videoUrls={["/form.mp4"]}
         />
+        <AnimatedPinDemo
+          title="OptimAIzer"
+          subtitle="Upload your repositories, detect bugs, and get instant AI-driven insights powered by Gemini’s RAG capabilities"
+          href="https://optimaizer.vercel.app/"
+          videoUrls={["/optimaizer.mp4"]}
+        />
       </div>
 
       {/* Contact/Feedback Form */}

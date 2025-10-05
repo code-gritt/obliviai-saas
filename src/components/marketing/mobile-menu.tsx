@@ -69,6 +69,10 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
       title: "Stellar",
       href: "https://stellar-ai-gold.vercel.app/",
     },
+    {
+      title: "OptimAIzer",
+      href: "https://optimaizer.vercel.app/",
+    },
   ];
 
   const blogsData = [

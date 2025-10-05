@@ -120,6 +120,12 @@ export const projectsData = [
       "Stellar allows you to create dynamic, validated forms in seconds with custom layouts",
     href: "https://stellar-ai-gold.vercel.app/",
   },
+  {
+    title: "OptimAIzer",
+    subtitle:
+      "Upload your repositories, detect bugs, and get instant AI-driven insights powered by Gemini’s RAG capabilities",
+    href: "https://optimaizer.vercel.app/",
+  },
 ];
 
 export const blogsData = [
